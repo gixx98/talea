@@ -1,22 +1,8 @@
 import { notFound } from "next/navigation";
 import storiesData from "@/data/stories.json";
-import StoryReader from "../../../components/StoryReader";
+import StoryReader from "@/components/StoryReader";
+import {Story, AudioMarker} from "@/types/story"
 
-interface AudioMarker {
-  position: number;
-  sound: string;
-  label: string;
-}
-
-interface Story {
-  id: string;
-  title: string;
-  content: string;
-  audioMarkers: AudioMarker[];
-  readingTime: string;
-  ageRange: string;
-  coverImage: string;
-}
 
 export default async function StoryPage({
   params,

@@ -3,12 +3,8 @@
 import { useEffect, useRef, useState } from "react";
 import { Howl } from "howler";
 import { Volume2 } from "lucide-react";
+import { AudioButtonProps } from "@/types/story";
 
-interface AudioButtonProps {
-  sound: string;
-  label: string;
-  filePath: string;
-}
 
 export default function AudioButton({ sound, label, filePath }: AudioButtonProps) {
   const [isPlaying, setIsPlaying] = useState(false);

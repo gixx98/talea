@@ -2,22 +2,7 @@
 
 import { useMemo } from "react";
 import AudioButton from "./AudioButton";
-
-interface AudioMarker {
-  position: number;
-  sound: string;
-  label: string;
-}
-
-interface Story {
-  id: string;
-  title: string;
-  content: string;
-  audioMarkers: AudioMarker[];
-  readingTime: string;
-  ageRange: string;
-  coverImage: string;
-}
+import { Story, AudioMarker } from "@/types/story"
 
 export default function StoryReader({ story }: { story: Story }) {
   const parsedContent = useMemo(() => {
@@ -30,7 +15,7 @@ export default function StoryReader({ story }: { story: Story }) {
             key={i}
             sound={marker.sound}
             label={marker.label}
-            filePath={`/sounds/${marker.sound}.wav`}
+            filePath={marker.url}
           />
         );
       return <span key={i}>{part}</span>;
