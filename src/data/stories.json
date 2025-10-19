@@ -1,0 +1,79 @@
+{
+  "stories": [
+    {
+      "id": "1",
+      "title": "The Curious Squirrel",
+      "content": "In a tall oak tree at the edge of the meadow lived a squirrel named Pip. Pip was not like the other squirrels. While his friends gathered acorns all day, Pip loved exploring the world beyond the trees. One bright morning, he spotted something shiny near the stream. He leapt from branch to branch, his tail flicking with excitement. [sound:squirrel]\n\nWhen he reached the ground, the shiny thing glimmered in the sunlight—it was a tiny silver button! Pip rolled it around, wondering who could have dropped it. Maybe it belonged to a fairy? Or perhaps a bird building a fancy nest?\n\nJust then, a gust of wind blew through the leaves. [sound:wind] Pip looked up and saw a blue feather floating down. He followed it, button in paw, until he reached the clearing where a magpie sat crying softly. The magpie’s shiny collection had spilled everywhere!\n\n“Oh no!” said Pip. “Is this yours?” He held up the button. The magpie’s eyes lit up. “Thank you! I thought I lost that one forever.” Together, they gathered all the missing treasures: a marble, a bell, and even a tiny spoon. [sound:chime]\n\nWhen they finished, the magpie offered Pip a gift—a single golden acorn. Pip smiled, tucked it into his fur, and scampered home. That night, as the stars twinkled above, Pip placed the golden acorn beside his bed and dreamed of tomorrow’s adventure. [sound:night]\n\nFrom that day on, he learned that curiosity always leads to something wonderful.",
+      "audioMarkers": [
+        {"position": 120, "sound": "squirrel", "label": "Squirrel chatter"},
+        {"position": 240, "sound": "wind", "label": "Wind blowing through leaves"},
+        {"position": 380, "sound": "chime", "label": "Magpie treasures jingling"},
+        {"position": 500, "sound": "night", "label": "Soft nighttime ambience"}
+      ],
+      "readingTime": "5 min",
+      "ageRange": "3-6",
+      "coverImage": "/covers/squirrel.jpg"
+    },
+    {
+      "id": "2",
+      "title": "Benny and the Blue Balloon",
+      "content": "Benny the bear cub woke up to a strange sound outside his cave—something was bouncing softly against a bush. [sound:rustle] He peeked out and saw a bright blue balloon caught on a twig! It shimmered in the sunlight, bobbing gently. Benny tugged the string, and the balloon floated free. [sound:balloon]\n\nHe laughed as it drifted above him. “Wait! Come back!” he called, chasing after it through the forest. He passed chirping birds [sound:birds], a sleepy deer, and even a family of rabbits having breakfast. The balloon floated higher, just out of reach.\n\nFinally, it got stuck on a tall tree branch. Benny climbed carefully, paw by paw, until he could grab the string. From up high, he saw the forest spread out below—green and gold and endless. Then a breeze picked up. [sound:wind]\n\n“Hold tight!” said Benny, but the balloon tugged and lifted him just a little. For a second, he was flying! His heart raced as he floated above the trees, giggling. Then, slowly, the balloon lowered him down onto a soft patch of grass.\n\nWhen he looked up, the balloon was gone, drifting away toward the clouds. Benny waved. “Thank you for the ride,” he said. He walked home, feeling lighter than air. That night, he dreamed of floating among stars. [sound:night]",
+      "audioMarkers": [
+        {"position": 80, "sound": "rustle", "label": "Leaves rustling"},
+        {"position": 130, "sound": "balloon", "label": "Balloon sound"},
+        {"position": 220, "sound": "birds", "label": "Birdsong"},
+        {"position": 340, "sound": "wind", "label": "Gentle breeze"},
+        {"position": 520, "sound": "night", "label": "Crickets at night"}
+      ],
+      "readingTime": "5 min",
+      "ageRange": "3-5",
+      "coverImage": "/covers/balloon.jpg"
+    },
+    {
+      "id": "3",
+      "title": "Luna’s Lost Star",
+      "content": "Every night, Luna the owl sat on her favorite branch and counted the stars. But one evening, she noticed something strange—one star was missing! [sound:owl]\n\n“Stars never just disappear,” she said. She spread her wings and glided silently through the dark forest. [sound:wind] The moonlight guided her to the meadow, where she found a soft glow shimmering in the grass.\n\nThere it was—the missing star! It was tiny and trembling, its light flickering weakly. “Oh dear,” said Luna, “you must be cold.” She wrapped her wings around it to keep it warm. [sound:soft_wing]\n\nThe star whispered, “I fell when the wind blew too strong.” Luna nodded. “Let’s get you home.” She soared high above the treetops, past the hills, past the clouds. The night air sparkled as they climbed. [sound:flight]\n\nWhen they reached the sky, the star twinkled brighter and brighter until it slipped gently from her feathers and settled back into place. The sky felt whole again. [sound:chime]\n\n“Thank you, Luna,” said the star. Luna smiled and returned to her tree. From then on, one star always twinkled a little brighter than the rest.",
+      "audioMarkers": [
+        {"position": 60, "sound": "owl", "label": "Owl hoot"},
+        {"position": 150, "sound": "wind", "label": "Wind through trees"},
+        {"position": 240, "sound": "soft_wing", "label": "Feathers brushing"},
+        {"position": 310, "sound": "flight", "label": "Air rushing during flight"},
+        {"position": 480, "sound": "chime", "label": "Star sparkle"}
+      ],
+      "readingTime": "5 min",
+      "ageRange": "3-6",
+      "coverImage": "/covers/luna.jpg"
+    },
+    {
+      "id": "4",
+      "title": "Milo’s Rainy Adventure",
+      "content": "Milo the mouse woke to the sound of raindrops tapping on his window. [sound:rain] He peeked outside and saw puddles forming all over the garden. “Perfect exploring weather!” he squeaked, pulling on his tiny leaf hat.\n\nHe ran down the path, splashing through puddles. [sound:splash] Each splash made him giggle. But soon, the rain grew heavier. He ducked under a big mushroom for shelter, where he met a ladybug named Dot.\n\n“Lost your way?” she asked. “Not yet,” said Milo, “but maybe soon!” They laughed together as thunder rumbled in the distance. [sound:thunder]\n\nWhen the rain slowed, Milo and Dot followed a rainbow’s reflection to a hidden pond. The water shimmered like glass, and frogs were singing in chorus. [sound:frog]\n\nMilo found a stick and paddled a leaf boat across the pond. The world felt wide and wonderful. As the sun came out, he looked up to see a rainbow arching across the sky. [sound:birdsong]\n\nHe turned to Dot and said, “Rainy days are full of surprises.” Then they both watched the last raindrop fall, golden in the light.",
+      "audioMarkers": [
+        {"position": 50, "sound": "rain", "label": "Falling rain"},
+        {"position": 130, "sound": "splash", "label": "Puddle splash"},
+        {"position": 240, "sound": "thunder", "label": "Distant thunder"},
+        {"position": 350, "sound": "frog", "label": "Frog croak"},
+        {"position": 480, "sound": "birdsong", "label": "Morning birds"}
+      ],
+      "readingTime": "5 min",
+      "ageRange": "3-5",
+      "coverImage": "/covers/milo.jpg"
+    },
+    {
+      "id": "5",
+      "title": "Tilly and the Tiny Train",
+      "content": "Tilly the turtle was slow but steady, and she loved exploring her garden. One afternoon, while following a trail of daisies, she found something curious—a tiny toy train, half buried in the dirt. [sound:train_idle]\n\nShe brushed it clean with her shell. Suddenly, the train’s whistle blew! [sound:train_whistle] “All aboard!” it called. Tilly blinked in surprise but climbed inside one of the little cars. With a chug and a puff of smoke, the train began to move. [sound:train_chug]\n\nIt rolled past dandelions, under leaves, and over tiny bridges made of twigs. Butterflies waved as it passed. [sound:butterfly_flap] The train whistled again and entered a tunnel made from an old flowerpot. Everything glowed softly inside.\n\nAt the end of the tunnel, Tilly saw a miniature station filled with beetles and ants waving flags. They cheered, “Welcome to Garden Junction!” [sound:cheer]\n\nTilly spent the day exploring the station and helping the ants fix the broken tracks. As the sun set, she climbed back into the little train. “Thank you, friends,” she said. The train chugged her home, slower and slower, until it stopped by her favorite rock.\n\nThat night, Tilly dreamed of tracks that led to the stars. [sound:night]",
+      "audioMarkers": [
+        {"position": 70, "sound": "train_idle", "label": "Soft train hum"},
+        {"position": 120, "sound": "train_whistle", "label": "Train whistle"},
+        {"position": 180, "sound": "train_chug", "label": "Train chugging"},
+        {"position": 280, "sound": "butterfly_flap", "label": "Soft fluttering"},
+        {"position": 360, "sound": "cheer", "label": "Tiny crowd cheering"},
+        {"position": 520, "sound": "night", "label": "Quiet night sounds"}
+      ],
+      "readingTime": "5 min",
+      "ageRange": "3-6",
+      "coverImage": "/covers/train.jpg"
+    }
+  ]
+}
