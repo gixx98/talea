@@ -6,7 +6,7 @@ import { Volume2 } from "lucide-react";
 import { AudioButtonProps } from "@/types/story";
 
 
-export default function AudioButton({ sound, label, filePath }: AudioButtonProps) {
+export default function AudioButton({ label, filePath }: AudioButtonProps) {
   const [isPlaying, setIsPlaying] = useState(false);
   const soundRef = useRef<Howl | null>(null);
 

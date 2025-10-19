@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 interface Story {
   id: string;
   title: string;
@@ -10,7 +12,7 @@ interface Story {
 export default function StoryCard({ story }: { story: Story }) {
   return (
     <div className="rounded-2xl shadow p-4 bg-white">
-      <img
+      <Image
         src={story.coverImage}
         alt={story.title}
         className="w-full h-48 object-cover rounded-xl mb-3"

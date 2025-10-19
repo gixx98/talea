@@ -16,7 +16,6 @@ export interface Story {
 }
 
 export interface AudioButtonProps {
-  sound: string;
   label: string;
   filePath: string;
 }
