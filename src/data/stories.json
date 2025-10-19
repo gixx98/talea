@@ -19,11 +19,11 @@
       "title": "Benny and the Blue Balloon",
       "content": "Benny the bear cub woke up to a strange sound outside his cave—something was bouncing softly against a bush. [sound:rustle] He peeked out and saw a bright blue balloon caught on a twig! It shimmered in the sunlight, bobbing gently. Benny tugged the string, and the balloon floated free. [sound:balloon]\n\nHe laughed as it drifted above him. “Wait! Come back!” he called, chasing after it through the forest. He passed chirping birds [sound:birds], a sleepy deer, and even a family of rabbits having breakfast. The balloon floated higher, just out of reach.\n\nFinally, it got stuck on a tall tree branch. Benny climbed carefully, paw by paw, until he could grab the string. From up high, he saw the forest spread out below—green and gold and endless. Then a breeze picked up. [sound:wind]\n\n“Hold tight!” said Benny, but the balloon tugged and lifted him just a little. For a second, he was flying! His heart raced as he floated above the trees, giggling. Then, slowly, the balloon lowered him down onto a soft patch of grass.\n\nWhen he looked up, the balloon was gone, drifting away toward the clouds. Benny waved. “Thank you for the ride,” he said. He walked home, feeling lighter than air. That night, he dreamed of floating among stars. [sound:night]",
       "audioMarkers": [
-        {"position": 80, "label": "Leaves rustling", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/leaves_rustling.wav"},
-        {"position": 130, "label": "Balloon sound", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/balloon.wav"},
-        {"position": 220, "label": "Birdsong", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/birds.wav"},
-        {"position": 340, "label": "Gentle breeze", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/breeze.wav"},
-        {"position": 520, "label": "Crickets at night", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/crickets.wav"}
+        {"position": 80, "sound": "rustle", "label": "Leaves rustling", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/leaves_rustling.wav"},
+        {"position": 130, "sound": "balloon", "label": "Balloon sound", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/balloon.wav"},
+        {"position": 220, "sound": "birds", "label": "Birdsong", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/birds.wav"},
+        {"position": 340, "sound": "wind", "label": "Gentle breeze", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/breeze.wav"},
+        {"position": 520, "sound": "night", "label": "Crickets at night", "url": "https://a2skp2sifq43gcbb.public.blob.vercel-storage.com/sounds/crickets.wav"}
       ],
       "readingTime": "5 min",
       "ageRange": "3-5",
