@@ -5,6 +5,7 @@ import { useRouter } from "next/navigation";
 import AudioButton from "./AudioButton";
 import { Story } from "@/types/story";
 import Image from "next/image";
+import { ArrowLeft } from "lucide-react";
 
 export default function StoryReader({ story }: { story: Story }) {
   const router = useRouter();
@@ -32,7 +33,7 @@ export default function StoryReader({ story }: { story: Story }) {
         onClick={() => router.push("/")}
         className="text-blue-600 hover:text-blue-800 text-sm font-medium mb-4"
       >
-        ← Back to stories
+        <ArrowLeft size={16} /> Back to stories
       </button>
 
       <Image
