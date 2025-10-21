@@ -31,10 +31,14 @@ export default function StoryReader({ story }: { story: Story }) {
       {/* Back button */}
       <button
         onClick={() => router.push("/")}
-        className="text-blue-600 hover:text-blue-800 text-sm font-medium mb-4"
+        className="cursor-pointer text-[#EF503D] bg-transparent hover:bg-[#ffebeb] text-sm font-medium mb-2 flex items-center gap-1 transition-colors rounded-lg px-2 py-2"
       >
-        <ArrowLeft size={16} /> Back to stories
+        <ArrowLeft size={16} />
+        Back to stories
       </button>
+
+
+
 
       <Image
         src={story.coverImage}
@@ -47,7 +51,7 @@ export default function StoryReader({ story }: { story: Story }) {
       <header>
         <h1 className="text-3xl font-bold mb-1">{story.title}</h1>
         <p className="text-gray-600 text-sm">
-          {story.readingTime} · Ages {story.ageRange}
+          {story.readingTime} • Ages {story.ageRange}
         </p>
       </header>
 

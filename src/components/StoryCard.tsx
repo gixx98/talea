@@ -11,7 +11,7 @@ interface Story {
 
 export default function StoryCard({ story }: { story: Story }) {
   return (
-    <div className="rounded-2xl shadow p-4 bg-white">
+    <div className="rounded-2xl shadow p-4 bg-white hover:-translate-y-1.5 transition-transform  cursor-pointer">
       <Image
         src={story.coverImage}
         alt={story.title}
@@ -20,7 +20,7 @@ export default function StoryCard({ story }: { story: Story }) {
         className="w-full h-48 object-cover rounded-xl mb-3"
       />
       <h2 className="text-lg font-semibold">{story.title}</h2>
-      <p className="text-sm text-gray-600">
+      <p className="text-sm text-gray-700">
         {story.readingTime} · Ages {story.ageRange}
       </p>
     </div>
