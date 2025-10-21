@@ -15,6 +15,8 @@ export default function StoryCard({ story }: { story: Story }) {
       <Image
         src={story.coverImage}
         alt={story.title}
+        width={300}
+        height={200}
         className="w-full h-48 object-cover rounded-xl mb-3"
       />
       <h2 className="text-lg font-semibold">{story.title}</h2>

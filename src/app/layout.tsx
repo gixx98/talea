@@ -5,7 +5,7 @@ import './globals.css';
 const inter = Inter({ subsets: ['latin'] });
 
 export const metadata: Metadata = {
-  title: 'Story Time - Interactive Children\'s Stories',
+  title: 'Talea - story time',
   description: 'Magical stories with interactive sound effects for children',
 };
 
