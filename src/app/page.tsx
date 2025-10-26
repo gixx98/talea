@@ -1,20 +1,31 @@
 'use client';
 
-
 import Link from "next/link";
 import StoryCard from "@/components/StoryCard";
 import storiesData from "@/data/stories.json";
 import { useState } from "react";
 import { Story } from "@/types/story";
 
+// Pill categories as shown in your image
+const PILL_CATEGORIES = [
+  "Bedtime favorites",
+  "Quick 5-Minute Reads",
+  "Animal Adventures",
+  "Toddler Time",
+  "Learning Fun",
+  "Giggle Time",
+  "Adventure Seekers",
+];
+
 export default function Page() {
   const { stories } = storiesData as { stories: Story[] };
-  const [query, setQuery] = useState('');
+  const [selected, setSelected] = useState<string | null>(null);
 
-  const filtered = stories.filter((s) =>
-    s.title.toLowerCase().includes(query.toLowerCase()) ||
-    s.content.toLowerCase().includes(query.toLowerCase())
-  );
+  // Filter stories based on selected pill
+  const filteredStories =
+    selected === null
+      ? stories
+      : stories.filter((story) => story.category === selected);
 
   return (
     <>
@@ -26,20 +37,26 @@ export default function Page() {
         Watch their eyes light up when animals speak and stories sing.
       </p>
 
-      {/* Search Input */}
-      <div className="max-w-5xl mx-auto px-6 mb-8">
-        <input
-          type="text"
-          placeholder="Search stories..."
-          value={query}
-          onChange={(e) => setQuery(e.target.value)}
-          className="w-full border border-gray-300 rounded-xl p-3 text-base focus:outline-none focus:ring-2 focus:ring-blue-400"
-        />
+      {/* Pill Filter */}
+      <div className="flex gap-3 mb-8 max-w-5xl mx-auto px-6 justify-start overflow-x-auto py-2 scrollbar-hide">
+        {PILL_CATEGORIES.map((pill) => (
+          <button
+            key={pill}
+            className={`flex-shrink-0 px-5 py-2 rounded-full border whitespace-nowrap ${
+              selected === pill
+                ? "bg-white border-red-400 text-red-900"
+                : "border-pink-100 bg-white text-red-900"
+            } text-base font-medium transition-all`}
+            onClick={() => setSelected(selected === pill ? null : pill)}
+          >
+            {pill}
+          </button>
+        ))}
       </div>
 
-      <main className="grid p-4 gap-4 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
-        {filtered.length > 0 ? (
-          filtered.map((story) => (
+      <main className="grid p-4 gap-6 sm:grid-cols-2 lg:grid-cols-3 max-w-5xl mx-auto">
+        {filteredStories.length > 0 ? (
+          filteredStories.map((story) => (
             <Link key={story.id} href={`/stories/${story.id}`}>
               <StoryCard story={story} />
             </Link>

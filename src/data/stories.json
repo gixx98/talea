@@ -12,7 +12,8 @@
       ],
       "readingTime": "5 min",
       "ageRange": "3-6",
-      "coverImage": "/covers/squirrel.jpg"
+      "coverImage": "/covers/squirrel.jpg",
+      "category": "Bedtime favorites"
     },
     {
       "id": "2",

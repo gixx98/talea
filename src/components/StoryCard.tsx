@@ -11,13 +11,13 @@ interface Story {
 
 export default function StoryCard({ story }: { story: Story }) {
   return (
-    <div className="rounded-2xl shadow p-4 bg-white hover:-translate-y-1.5 transition-transform  cursor-pointer">
+    <div className="rounded-2xl hover:scale-103 transition-transform  cursor-pointer">
       <Image
         src={story.coverImage}
         alt={story.title}
         width={300}
         height={200}
-        className="w-full h-48 object-cover rounded-xl mb-3"
+        className="w-full h-48 object-cover rounded-xl mb-1"
       />
       <h2 className="text-lg font-semibold">{story.title}</h2>
       <p className="text-sm text-gray-700">

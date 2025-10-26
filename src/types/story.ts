@@ -13,6 +13,7 @@ export interface Story {
   readingTime: string;
   ageRange: string;
   coverImage: string;
+  category:string
 }
 
 export interface AudioButtonProps {
