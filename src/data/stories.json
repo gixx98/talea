@@ -28,7 +28,8 @@
       ],
       "readingTime": "5 min",
       "ageRange": "3-5",
-      "coverImage": "/covers/balloon.jpg"
+      "coverImage": "/covers/balloon.jpg",
+      "category": "Bedtime favorites"
     },
     {
       "id": "3",
@@ -43,7 +44,8 @@
       ],
       "readingTime": "5 min",
       "ageRange": "3-6",
-      "coverImage": "/covers/luna.jpg"
+      "coverImage": "/covers/luna.jpg",
+      "category": "Bedtime favorites"
     },
     {
       "id": "4",
@@ -58,7 +60,9 @@
       ],
       "readingTime": "5 min",
       "ageRange": "3-5",
-      "coverImage": "/covers/milo.jpg"
+      "coverImage": "/covers/milo.jpg",
+      "category": "Animal Adventures"
+
     },
     {
       "id": "5",
@@ -74,7 +78,9 @@
       ],
       "readingTime": "5 min",
       "ageRange": "3-6",
-      "coverImage": "/covers/train.jpg"
+      "coverImage": "/covers/train.jpg",
+      "category": "Quick 5-Minute Reads"
+
     }
   ]
 }

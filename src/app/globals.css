@@ -1,8 +1,18 @@
 @import "tailwindcss";
 
+
 :root {
   --background: #FFF8F8;
   --foreground: #171717;
+  --color-1: oklch(0.248 0.083 30.1);
+  --color-2: oklch(0.336 0.112 30.1);
+  --color-3: oklch(0.424 0.141 30.1);
+  --color-4: oklch(0.511 0.170 30.1);
+  --color-5: oklch(0.599 0.199 30.1);
+  --color-6: oklch(0.687 0.169 30.1);
+  --color-7: oklch(0.775 0.111 30.1);
+  --color-8: oklch(0.862 0.062 30.1);
+  --color-9: oklch(0.950 0.021 30.1);
 }
 
 @theme inline {
@@ -12,11 +22,31 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+.light {
+  --background: #FFF8F8;
+  --foreground: #171717;
+  --pill-background: var(--color-3);
+  --pill-foreground: var(--color-4);
+  --pill-background-hover: #FADCDC;
+  --pill-border-color: var(--color-8);
+  --pill-border-color-active: var(--color-3);
+}
+
+.dark {
+  --background: #1a0e0e;
+  --foreground: #DED6C4;
+
+  --pill-background: #2E2222;
+  /* muted dark brownish-gray, not pure black */
+  --pill-foreground: #ECD6D0;
+  /* soft light, slightly warm for text */
+  --pill-background-hover: #453133;
+  /* brighter, more visible on hover */
+  --pill-border-color: #A98282;
+  /* low-saturation, muted rose for border */
+  --pill-border-color-active: #FF4757;
+  /* accent red for active state, still muted */
+
 }
 
 html {
@@ -28,6 +58,31 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-color-text {
+  color: var(--color-1);
+}
+
+.custom-pill {
+  color: var(--pill-foreground);
+}
+
+.custom-pill-inactive {
+  border: var(--pill-border-color) 1px solid;
+
+}
+
+.custom-pill-active {
+  border: var(--pill-border-color-active) 1px solid;
+  color: var(--color-9);
+  background-color: var(--pill-background);
+
+}
+
+.custom-pill:hover {
+  background-color: brightness(-50%);
+}
+
 .page-transition {
   opacity: 0;
   transform: translateY(10px);
@@ -39,6 +94,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
   }
+
   to {
     opacity: 1;
     transform: translateY(0);
@@ -48,7 +104,10 @@ body {
 .scrollbar-hide::-webkit-scrollbar {
   display: none;
 }
+
 .scrollbar-hide {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;     /* Firefox */
+  -ms-overflow-style: none;
+  /* IE and Edge */
+  scrollbar-width: none;
+  /* Firefox */
 }

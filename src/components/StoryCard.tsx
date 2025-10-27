@@ -11,18 +11,21 @@ interface Story {
 
 export default function StoryCard({ story }: { story: Story }) {
   return (
-    <div className="rounded-2xl hover:scale-103 transition-transform  cursor-pointer">
-      <Image
-        src={story.coverImage}
-        alt={story.title}
-        width={300}
-        height={200}
-        className="w-full h-48 object-cover rounded-xl mb-1"
-      />
-      <h2 className="text-lg font-semibold">{story.title}</h2>
-      <p className="text-sm text-gray-700">
+    <div className="rounded-2xl cursor-pointer">
+      <div className="overflow-hidden rounded-xl mb-1">
+        <Image
+          src={story.coverImage}
+          alt={story.title}
+          width={300}
+          height={200}
+          className="w-full h-48 object-cover transform transition-transform duration-300 hover:scale-105"
+        />
+      </div>
+      <h2 className="text-base font-medium custom-color-text">{story.title}</h2>
+      <p className="text-sm custom-color-text">
         {story.readingTime} · Ages {story.ageRange}
       </p>
     </div>
   );
 }
+

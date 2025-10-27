@@ -50,12 +50,12 @@ export default function StoryReader({ story }: { story: Story }) {
 
       <header>
         <h1 className="text-3xl font-bold mb-1">{story.title}</h1>
-        <p className="text-gray-600 text-sm">
+        <p className="text-sm custom-color-text">
           {story.readingTime} • Ages {story.ageRange}
         </p>
       </header>
 
-      <div className="prose prose-lg text-gray-800 leading-relaxed">
+      <div className="prose prose-lg leading-relaxed custom-color-text">
         {parsedContent}
       </div>
     </article>

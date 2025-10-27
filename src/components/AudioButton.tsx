@@ -128,7 +128,7 @@ export default function AudioButton({ label, filePath }: AudioButtonProps) {
       <button
         ref={buttonRef}
         onClick={togglePlay}
-        className="relative inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FCEAE6] hover:bg-red-100 cursor-pointer text-[#EF503D] text-sm font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
+        className="relative text-sm inline-flex items-center gap-2 px-3 py-1 rounded-full bg-[#FCEAE6] hover:bg-red-100 cursor-pointer text-red-600 font-medium transition focus:outline-none focus-visible:ring-2 focus-visible:ring-blue-500 focus-visible:ring-offset-2"
         aria-label={`${isPlaying ? "Pause" : "Play"} sound: ${label}`}
         aria-pressed={isPlaying}
       >

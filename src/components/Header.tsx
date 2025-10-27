@@ -1,11 +1,14 @@
 "use client";
 
 import { Link } from "lucide-react";
+import ThemeToggle from "./ThemeToggle";
 
 export default function Header() {
     return (
-        <header className="w-full h-[56px] pt-6 flex items-center justify-center">
-                <Logo />
+        <header className="max-w-5xl mx-auto h-[56px] px-4 py-6 flex items-center flex-row justify-between">
+            <Logo />
+            <ThemeToggle />
+
         </header>
     );
 }
