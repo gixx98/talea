@@ -22,7 +22,7 @@ export default function StoryCard({ story }: { story: Story }) {
         />
       </div>
       <h2 className="text-base font-medium custom-color-text">{story.title}</h2>
-      <p className="text-sm custom-color-text">
+      <p className="text-sm text-[var(--foreground-secondary)]">
         {story.readingTime} · Ages {story.ageRange}
       </p>
     </div>

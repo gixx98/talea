@@ -5,6 +5,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Header from '@/components/Header';
 import { useEffect, useState } from 'react';
+import { Analytics } from "@vercel/analytics/next"
 import ThemeToggle from '@/components/ThemeToggle';
 
 

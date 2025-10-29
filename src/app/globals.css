@@ -2,8 +2,6 @@
 
 
 :root {
-  --background: #FFF8F8;
-  --foreground: #171717;
   --color-1: oklch(0.248 0.083 30.1);
   --color-2: oklch(0.336 0.112 30.1);
   --color-3: oklch(0.424 0.141 30.1);
@@ -24,27 +22,31 @@
 
 .light {
   --background: #FFF8F8;
-  --foreground: #171717;
-  --pill-background: var(--color-3);
+  --foreground: var(--color-1);
+  --borderColor: var(--color-8);
+  --foreground-secondary:color-mix(in hsl,  var(--color-2), gray 70%);
+  --pill-background: var(--color-4);
   --pill-foreground: var(--color-4);
+  --pill-foreground-active: var(--color-9);
   --pill-background-hover: #FADCDC;
   --pill-border-color: var(--color-8);
-  --pill-border-color-active: var(--color-3);
+  --pill-border-color-active: var(--color-4);
 }
 
 .dark {
   --background: #1a0e0e;
   --foreground: #DED6C4;
-
-  --pill-background: #2E2222;
+  --borderColor: var(--color-3);
+  --pill-background: #FFF8F8;
   /* muted dark brownish-gray, not pure black */
   --pill-foreground: #ECD6D0;
+  --pill-foreground-active: var(--color-2);
   /* soft light, slightly warm for text */
   --pill-background-hover: #453133;
   /* brighter, more visible on hover */
   --pill-border-color: #A98282;
   /* low-saturation, muted rose for border */
-  --pill-border-color-active: #FF4757;
+  --pill-border-color-active: var(--color-9);
   /* accent red for active state, still muted */
 
 }
@@ -60,7 +62,7 @@ body {
 }
 
 .custom-color-text {
-  color: var(--color-1);
+  color: var(--foreground);
 }
 
 .custom-pill {
@@ -74,7 +76,7 @@ body {
 
 .custom-pill-active {
   border: var(--pill-border-color-active) 1px solid;
-  color: var(--color-9);
+  color: var(--pill-foreground-active);
   background-color: var(--pill-background);
 
 }

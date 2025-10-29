@@ -22,6 +22,16 @@ export default function StoryReader({ story }: { story: Story }) {
             filePath={marker.url}
           />
         );
+
+
+      if (part.includes('\n')) {
+        return part.split('\n').map((line, lineIndex) => (
+          <span key={`${i}-${lineIndex}`}>
+            {line}
+            {lineIndex < part.split('\n').length - 1 && <br />}
+          </span>
+        ));
+      }
       return <span key={i}>{part}</span>;
     });
   }, [story]);
@@ -34,28 +44,24 @@ export default function StoryReader({ story }: { story: Story }) {
         className="cursor-pointer text-[#EF503D] bg-transparent hover:bg-[#ffebeb] text-sm font-medium mb-2 flex items-center gap-1 transition-colors rounded-lg px-2 py-2"
       >
         <ArrowLeft size={16} />
-        Back to stories
+        Stories
       </button>
 
-
-
+      <header>
+        <h1 className="text-3xl font-bold mb-1">{story.title}</h1>
+        <p className="text-sm text-[var(--foreground-secondary)]">
+          {story.readingTime} • Ages {story.ageRange}
+        </p>
+      </header>
 
       <Image
         src={story.coverImage}
         alt={story.title}
         width={300}
         height={200}
-        className="w-full h-64 object-cover rounded-2xl"
+        className="w-full h-80 object-cover rounded-2xl"
       />
-
-      <header>
-        <h1 className="text-3xl font-bold mb-1">{story.title}</h1>
-        <p className="text-sm custom-color-text">
-          {story.readingTime} • Ages {story.ageRange}
-        </p>
-      </header>
-
-      <div className="prose prose-lg leading-relaxed custom-color-text">
+      <div className="prose prose-lg leading-7 custom-color-text">
         {parsedContent}
       </div>
     </article>
